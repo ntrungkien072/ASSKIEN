@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Nhúng Bootstrap -->
+    <link rel="stylesheet" href="/lib/bootstrap.css">
+    <script src="/lib/bootstrap.js"></script>
+
+    <!-- Nhúng Font Icon -->
+    <script src="/lib/font-fontawesome-ae333ffef2.js"></script>
+
+    <!-- Nhúng AngularJS -->
+    <script src="/lib/angular.js"></script>
+    <script src="/lib/angular-route.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row" style="margin-top: 120px;">
+                <div class="col-12 text-center mt-5">
+                    <h4>
+                        <p class="fw-bold" style="color: red;">UPDATE SKIN SÚNG</p>
+                    </h4>
+                    <div class=""
+                        style="height: 5px; width: 75px; background-color: red; border-radius: 10px; margin: 0 auto;">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 mb-3">
+                <label for="">Tên:</label>
+                <input type="text" class="form-control" ng-click="validate()" ng-model="update.ten" id="1">
+                <span style="color: red; font-size: 12px;" id="6"></span>
+                <label for="">Loại súng</label>
+                <input class="form-control" ng-click="validate()" ng-model="update.loai" id="2">
+                <span style="color: red; font-size: 12px;" id="7"></span>
+                <label for="">Giá CARD</label>
+                <input class="form-control" type="number" ng-click="validate()" ng-model="update.card" id="3">
+                <span style="color: red; font-size: 12px;" id="8"></span>
+                <label for="">Giá ATM</label>
+                <input class="form-control" type="number" ng-click="validate()" ng-model="update.atm" id="4">
+                <span style="color: red; font-size: 12px;" id="9"></span>
+                <label for="">Ảnh</label>
+                <input type="text" class="form-control" ng-click="validate()" ng-model="update.anh" id="5">
+                <span style="color: red; font-size: 12px;" id="10"></span>
+                <button ng-click="update1()" class="col-1 btn btn-success mt-3">Lưu</button>
+            </div>
+        </div>
+</body>
+
+</html>

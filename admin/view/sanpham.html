@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Nhúng Bootstrap -->
+    <link rel="stylesheet" href="/lib/bootstrap.css">
+    <script src="/lib/bootstrap.js"></script>
+
+    <!-- Nhúng Font Icon -->
+    <script src="/lib/font-fontawesome-ae333ffef2.js"></script>
+
+    <!-- Nhúng AngularJS -->
+    <script src="/lib/angular.js"></script>
+    <script src="/lib/angular-route.js"></script>
+    <script src="controller/fill.js"></script>
+    <script src=""></script>
+    <style>
+        .a th {
+            line-height: 150px;
+        }
+
+        .a td {
+            line-height: 150px;
+        }
+    </style>
+</head>
+
+<body ng-app="myApp">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row" style="margin-top: 120px;">
+                <div class="col-12 text-center mt-5">
+                    <h4>
+                        <p class="fw-bold" style="color: red;">QUẢN LÝ TRANG WEB</p>
+                    </h4>
+                    <div class=""
+                        style="height: 5px; width: 75px; background-color: red; border-radius: 10px; margin: 0 auto;">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 text-center d-flex justify-content-center">
+                <div class="col-2 border-end">
+                    <a href="#!qlsp" class="nav-link"><button class="btn"  style="color: aliceblue;">
+                            <h6>Quản lý sản phẩm</h6>
+                        </button></a>
+                </div>
+                <div class="col-2 border-end">
+                    <a href="#!qlnd" class="nav-link"><button class="btn"  style="color: aliceblue;">
+                            <h6>Quản lý người dùng</h6>
+                        </button></a>
+                </div>
+                <div class="col-2">
+                    <a href="#!hd" class="nav-link"><button class="btn"  style="color: aliceblue;">
+                            <h6>Quản lý hoá đơn</h6>
+                        </button></a>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="row d-flex d-flex flex-row-reverse">
+                    <div class="col-1"><a href="#!them"><button class="btn btn-success" style="width: 100%;"
+                                data-bs-toggle="modal" data-bs-target="#staticBackdrop1">New</button></a></div>
+                </div>
+                <table class="table table-bordered border-primary text-center mt-2">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Rank</th>
+                            <th scope="col">Tướng</th>
+                            <th scope="col">Trang phục</th>
+                            <th scope="col">Giá</th>
+                            <th scope="col">Ảnh</th>
+                            <th scope="col">ID tạo</th>
+                            <th scope="col">Hoạt động</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="a" ng-repeat="(index, value) in ds">
+                            <th class="" scope="row">{{value.id}}</th>
+                            <td> {{value.ten}}</td>
+                            <td>{{value.loai}}</td>
+                            <td>{{value.card}}</td>
+                            <td>{{value.atm}}</td>
+                            <td><img src="{{value.anh}}" alt="{{value.anh}}" class="" height="150px" width="100%"></td>
+                            <td>{{value.idtao}}</td>
+                            <td class="">
+                                <a href="" ng-click="delete(value.id, index)"><button class="btn bg-Light"  style="background-color: rgb(222, 6, 9);">
+                                Xoá</button></a>
+                                <a href="#!sua/{{value.id}}" ng-click="sua(index)"><button class="btn bg-Light" style="background-color: rgb(102, 0, 255);">Sửa</button></a>
+                                <a href=""><button ng-click="show(value.id, index)" class="btn bg-Light" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal" style="background-color: rgb(255, 0, 204);">New img</button></a>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" style="margin-top: 50px; color: black;" id="exampleModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" >Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label for="">Nhập link ảnh</label> <br>
+                    <input type="text" class="form-control" ng-model="image" ng-click="validate()" id="1"> <br>
+                    <h6 class="text-center">Các hình ảnh đang có sẵn</h6>
+                    <div class="row">
+                        <a href=""><img src="{{anh}}" class="mt-2 col-6 me-1 ms-1" alt="" style="width: 48%;height: 100px;"
+                            ng-repeat="(index,anh) in dsa track by $index" ng-click="deleteimg(index)"></a>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ĐÓNG</button>
+                    <button type="button" class="btn btn-primary" ng-click="newimg()">THÊM</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

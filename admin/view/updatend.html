@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Nhúng Bootstrap -->
+    <link rel="stylesheet" href="/lib/bootstrap.css">
+    <script src="/lib/bootstrap.js"></script>
+
+    <!-- Nhúng Font Icon -->
+    <script src="/lib/font-fontawesome-ae333ffef2.js"></script>
+
+    <!-- Nhúng AngularJS -->
+    <script src="/lib/angular.js"></script>
+    <script src="/lib/angular-route.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row" style="margin-top: 120px;">
+                <div class="col-12 text-center mt-5">
+                    <h4>
+                        <p class="fw-bold" style="color: red;">UPDATE NGƯỜI DÙNG</p>
+                    </h4>
+                    <div class=""
+                        style="height: 5px; width: 75px; background-color: red; border-radius: 10px; margin: 0 auto;">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 mb-3">
+                <label for="">Tên:</label>
+                <input type="text" class="form-control" ng-model="update1.ten">
+                <label for="">Tài khoản</label>
+                <input class="form-control" ng-model="update1.taikhoan">
+                <label for="">Mật khẩu</label>
+                <input class="form-control" ng-model="update1.matkhau">
+                <label for="">Chức vụ</label>
+                <input class="form-control" ng-model="update1.chucvu">
+                <button ng-click="update2()" class="btn btn-success mt-3 col-1">Lưu</button>
+            </div>
+        </div>
+</body>
+
+</html>

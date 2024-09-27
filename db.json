@@ -1,0 +1,243 @@
+{
+  "sanpham": [
+    {
+      "id": "4",
+      "ten": "Cao thủ",
+      "loai": 100,
+      "card": 20000,
+      "atm": 12309999,
+      "anh": "https://shoplienquan.vn/upload/product/4ddb849eea8da97a89dce5d1b3d056f2.jpg",
+      "anhct": [
+        "https://shoplienquan.vn/upload/product/4ddb849eea8da97a89dce5d1b3d056f2.jpg",
+        "https://shoplienquan.vn/upload/product/4ddb849eea8da97a89dce5d1b3d056f2.jpg",
+        "https://shoplienquan.vn/upload/product/4ddb849eea8da97a89dce5d1b3d056f2.jpg"
+      ],
+      "idtao": "1"
+    },
+    {
+      "id": "d5ea",
+      "ten": "cao thủ",
+      "loai": "100",
+      "card": 10000,
+      "atm": 20000,
+      "anh": "https://i0.wp.com/thatnhucuocsong.com.vn/wp-content/uploads/2022/01/anh-lien-quan.jpg?fit=1282%2C722&ssl=1",
+      "anhct": [],
+      "idtao": "1"
+    },
+    {
+      "id": "6854",
+      "ten": "wdscv",
+      "loai": "100",
+      "card": 100,
+      "atm": 1000,
+      "anh": "https://ik.imagekit.io/tvlk/blog/2021/09/du-lich-anh-8-1024x576.jpg?tr=dpr-2,w-675",
+      "anhct": [
+        "https://ik.imagekit.io/tvlk/blog/2021/09/du-lich-anh-2.jpg?tr=dpr-2,w-675",
+        "https://ik.imagekit.io/tvlk/blog/2021/09/du-lich-anh-2.jpg?tr=dpr-2,w-675",
+        "https://ik.imagekit.io/tvlk/blog/2021/09/du-lich-anh-2.jpg?tr=dpr-2,w-675"
+      ],
+      "idtao": "1"
+    }
+  ],
+  "nguoidung": [
+    {
+      "id": "1",
+      "ten": "violet",
+      "taikhoan": "1",
+      "matkhau": "1",
+      "chucvu": "1"
+    },
+    {
+      "id": "ac88",
+      "ten": "2",
+      "taikhoan": "7",
+      "matkhau": "2",
+      "chucvu": "2"
+    },
+    {
+      "id": "40d7",
+      "ten": "3",
+      "taikhoan": "3",
+      "matkhau": "3",
+      "chucvu": "2"
+    },
+    {
+      "id": "9433",
+      "ten": "kien",
+      "taikhoan": "15",
+      "matkhau": "1",
+      "vaitro": "",
+      "chucvu": "1"
+    },
+    {
+      "id": "47d4",
+      "ten": "1",
+      "taikhoan": "8",
+      "matkhau": "1111@",
+      "vaitro": "",
+      "chucvu": "1"
+    },
+    {
+      "id": "2409",
+      "ten": "oo",
+      "taikhoan": "11",
+      "matkhau": "122222",
+      "vaitro": "",
+      "chucvu": "1"
+    },
+    {
+      "id": "6790",
+      "ten": "kien",
+      "taikhoan": "10",
+      "matkhau": "kien@",
+      "vaitro": "",
+      "chucvu": "1"
+    }
+  ],
+  "donhang": [
+    {
+      "id": "1",
+      "tensung": "Cao thủ",
+      "loai": 100,
+      "atm": 123,
+      "gia": 20000,
+      "trangthai": "Đã huỷ",
+      "idkhachhang": "ac88",
+      "idgame": "1234567"
+    },
+    {
+      "id": "2",
+      "tensung": "Mp40",
+      "loai": 100,
+      "atm": 123,
+      "gia": "30.000",
+      "trangthai": "Thành công",
+      "idkhachhang": "40d7",
+      "idgame": "",
+      "tk": "123456789",
+      "mk": "123456789"
+    },
+    {
+      "id": "3807",
+      "tensung": "Cao thủ",
+      "gia": 20000,
+      "trangthai": "Thành công",
+      "idkhachhang": "40d7",
+      "idgame": "",
+      "tk": "4",
+      "mk": "4"
+    },
+    {
+      "id": "6acb",
+      "tensung": "Cao thủ",
+      "gia": 20000,
+      "trangthai": "Thành công",
+      "idkhachhang": "40d7",
+      "idgame": "",
+      "tk": "abc",
+      "mk": "abc"
+    },
+    {
+      "id": "9634",
+      "tensung": "Cao thủ",
+      "gia": 20000,
+      "trangthai": "Thành công",
+      "idkhachhang": "40d7",
+      "idgame": "1",
+      "tk": "0978",
+      "mk": "8786"
+    },
+    {
+      "id": "1333",
+      "tensung": "Cao thủ",
+      "gia": 20000,
+      "trangthai": "Chờ xử lý",
+      "idkhachhang": "1",
+      "idgame": "1"
+    },
+    {
+      "id": "1afb",
+      "tensung": "Cao thủ",
+      "gia": 20000,
+      "trangthai": "Thành công",
+      "idkhachhang": "ac88",
+      "idgame": "1",
+      "tk": "k",
+      "mk": "k"
+    },
+    {
+      "id": "e416",
+      "tensung": "Cao thủ",
+      "gia": 20000,
+      "trangthai": "Thành công",
+      "idkhachhang": "de4f",
+      "idgame": "1",
+      "tk": "h",
+      "mk": "h"
+    },
+    {
+      "id": "33d3",
+      "tensung": "Cao thủ",
+      "gia": 20000,
+      "trangthai": "Thành công",
+      "idkhachhang": "ac88",
+      "idgame": "1",
+      "tk": "5",
+      "mk": "55"
+    },
+    {
+      "id": "99f5",
+      "tensung": "Cao thủ",
+      "gia": 20000,
+      "trangthai": "Thành công",
+      "idkhachhang": "1",
+      "idgame": "2",
+      "tk": "5",
+      "mk": "5"
+    },
+    {
+      "id": "bdb7",
+      "tensung": "Cao thủ",
+      "gia": 20000,
+      "trangthai": "Đã huỷ",
+      "idkhachhang": "ac88",
+      "idgame": "2"
+    },
+    {
+      "id": "edc3",
+      "tensung": "Cao thủ",
+      "gia": 20000,
+      "trangthai": "Thành công",
+      "idkhachhang": "ac88",
+      "idgame": "2",
+      "tk": "d",
+      "mk": "f"
+    },
+    {
+      "id": "f75a",
+      "tensung": "Cao thủ",
+      "gia": 20000,
+      "trangthai": "Chờ xử lý",
+      "idkhachhang": "ac88",
+      "idgame": "2"
+    },
+    {
+      "id": "087e",
+      "tensung": "wdscv",
+      "gia": 100,
+      "trangthai": "Thành công",
+      "idkhachhang": "1",
+      "idgame": "6854",
+      "tk": "1",
+      "mk": "1"
+    },
+    {
+      "id": "22d1",
+      "tensung": "wdscv",
+      "gia": 100,
+      "trangthai": "Đã huỷ",
+      "idkhachhang": "40d7",
+      "idgame": "6854"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Nhúng Bootstrap -->
+    <link rel="stylesheet" href="/lib/bootstrap.css">
+    <script src="/lib/bootstrap.js"></script>
+
+    <!-- Nhúng Font Icon -->
+    <script src="/lib/font-fontawesome-ae333ffef2.js"></script>
+
+    <!-- Nhúng AngularJS -->
+    <script src="/lib/angular.js"></script>
+    <script src="/lib/angular-route.js"></script>
+    <script src="controller/fill.js"></script>
+    <script src=""></script>
+    <style>
+        .a th {
+            line-height: 150px;
+        }
+
+        .a td {
+            line-height: 150px;
+        }
+    </style>
+</head>
+
+<body ng-app="myApp">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row" style="margin-top: 120px;">
+                <div class="col-12 text-center mt-5">
+                    <h4>
+                        <p class="fw-bold" style="color: red;">ĐƠN HÀNG</p>
+                    </h4>
+                    <div class=""
+                        style="height: 5px; width: 75px; background-color: red; border-radius: 10px; margin: 0 auto;">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 text-center d-flex justify-content-center">
+                <div class="col-2 border-end">
+                    <a href="#!qlsp" class="nav-link"><button class="btn" style="color: aliceblue;">
+                            <h6>Quản lý sản phẩm</h6>
+                        </button></a>
+                </div>
+                <div class="col-2 border-end">
+                    <a href="#!qlnd" class="nav-link"><button class="btn" style="color: aliceblue;">
+                            <h6>Quản lý người dùng</h6>
+                        </button></a>
+                </div>
+                <div class="col-2">
+                    <a href="#!hd" class="nav-link"><button class="btn"  style="color: aliceblue;">
+                            <h6>Quản lý hoá đơn</h6>
+                        </button></a>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <table class="table table-bordered border-primary text-center mt-2">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Rank </th>
+                            <th scope="col">Giá</th>
+                            <th scope="col">ID khách hàng</th>
+                            <th scope="col">ID game</th>
+                            <th scope="col">Trạng thái</th>
+                            <th scope="col">Tài khoản</th>
+                            <th scope="col">Mật khẩu</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="a" ng-repeat="(index, value) in donhang">
+                            <th class="" scope="row">{{value.id}}</th>
+                            <td> {{value.tensung}}</td>
+                            <td>{{value.gia}}</td>
+                            <td>{{value.idkhachhang}}</td>
+                            <td>{{value.idgame}}</td>
+                            <td id="trangthai">
+                                <p id="tt" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                    ng-click="layid(value.id,index)">{{value.trangthai}}</p>
+                            </td>
+                            <td>{{value.tk}}</td>
+                            <td>{{value.mk}}</td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" style="margin-top: 50px;" id="exampleModal" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Vui lòng điền tài khoản và mật khẩu để xác nhận đơn
+                        hàng</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label for="">Tài khoản</label>
+                    <input type="text" class="form-control" ng-model="acc.tk">
+                    <label for="">Mật khẩu</label>
+                    <input type="text" class="form-control" ng-model="acc.mk">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ĐÓNG</button>
+                    <button type="button" class="btn btn-primary" ng-click="thanhcong()">Xác nhận</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<div class="row mt-5" style="background-color: black;">
+    <div class="d-flex justify-content-between">
+        <div class="">
+            <p style="font-weight: bold;">
+            <h2>#{{ct.id}} </h2>
+            </p>
+            <span style="font-weight: bold; color: red;">Liên quân </span>
+        </div>
+        <div class="">
+            <p style="font-weight: bold;">
+            <h2>{{ct.card}} CARD </h2>
+            </p>
+
+        </div>
+        <div class="mt-4">
+            <button class="btn btn-outline-success rounded-0" type="submit"
+                style="background-color: brown; color: aliceblue;" ng-click="mua()">Mua ngay </button>
+            <button class="btn btn-outline-success rounded-0" type="submit"
+                style="background-color: green; color: aliceblue;">Nạp thẻ cào </button>
+        </div>
+    </div>
+
+</div>
+<div class="row mt-1" style="background-color: black;">
+    <div class="d-flex justify-content-between">
+        <div class="">
+            <p style="font-weight: bold;">
+            <h6>Rank: {{ct.ten}}</h6>
+            </p>
+            <span style="font-weight: bold; color: red;">
+                <h6>Nổi bật</h6>
+            </span>
+        </div>
+        <div class="mt-2">
+            <p style="font-weight: bold;">
+            <h6>Tướng {{ct.loai}}</h6>
+            </p>
+
+        </div>
+        <div class="mt-2">
+            <p style="font-weight: bold;">
+            <h6>Trang phục {{ct.atm}}</h6>
+            </p>
+        </div>
+    </div>
+
+
+
+
+</div>
+<div class="row mt-2">
+    <div class="col-12" style="background-color: black; text-align: center;">
+        <img ng-repeat="ab in ctt track by $index" src="{{ab}}" style="width: 100%; height: 700px;" alt=""
+            class="img-thumbnail ms-2 mt-4">
+    </div>
+    <p class="text-center mt-4"><button style="background-color: red; color: aliceblue;">Mua ngay </button></p>
+</div>

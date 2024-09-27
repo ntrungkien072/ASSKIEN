@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Nhúng Bootstrap -->
+    <link rel="stylesheet" href="/lib/bootstrap.css">
+    <script src="/lib/bootstrap.js"></script>
+
+    <!-- Nhúng Font Icon -->
+    <script src="/lib/font-fontawesome-ae333ffef2.js"></script>
+
+    <!-- Nhúng AngularJS -->
+    <script src="/lib/angular.js"></script>
+    <script src="/lib/angular-route.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row" style="margin-top: 120px;">
+                <div class="col-12 text-center mt-5">
+                    <h4>
+                        <p class="fw-bold" style="color: red;">THÊM NGƯỜI DÙNG</p>
+                    </h4>
+                    <div class=""
+                        style="height: 5px; width: 75px; background-color: red; border-radius: 10px; margin: 0 auto;">
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 mb-3">
+                <label for="">Tên</label>
+                <input type="text" class="form-control" ng-click="validate()" ng-model="data.ten" required id="11">
+                <span style="color: red; font-size: 12px;" id="15"></span>
+                <label for="">Tài khoản</label>
+                <input class="form-control" ng-model="data.taikhoan" ng-click="validate()" required id="12">
+                <span style="color: red; font-size: 12px;" id="16"></span>
+                <label for="">Mật khẩu</label>
+                <input class="form-control" ng-model="data.matkhau" ng-click="validate()" required id="13">
+                <span style="color: red; font-size: 12px;" id="17"></span>
+                <label for="">Chức vụ</label>
+                <input class="form-control" ng-model="data.chucvu" ng-click="validate()" required id="14">
+                <span style="color: red; font-size: 12px;" id="18"></span>
+                <button ng-click="save()" class="btn btn-success mt-3 col-1">ADD</button>
+            </div>
+        </div>
+</body>
+
+</html>
